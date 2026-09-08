@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal Priadi - Portofolio & Profil Seniman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        warmSand: '#F3EFE6',
+                        terracotta: '#C85A32',
+                        walnut: '#2C1D11',
+                        vintageGold: '#D4AF37',
+                        mossGreen: '#5A6B43',
+                        softClay: '#E8D2C2'
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        hand: ['Caveat', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C1D11;
+        }
+        .grain-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-sans antialiased relative selection:bg-terracotta selection:text-white">
+    <div class="fixed inset-0 grain-overlay pointer-events-none z-50"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-walnut/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wide text-walnut flex items-center gap-2">
+                <span>Sal Priadi</span>
+                <span class="text-xs bg-terracotta/10 text-terracotta px-2.5 py-0.5 rounded-full font-sans font-medium">Portofolio Seniman</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-walnut/80">
+                <a href="#profil" class="hover:text-terracotta transition-colors">Profil</a>
+                <a href="#rekam-jejak" class="hover:text-terracotta transition-colors">Pendidikan & Karir</a>
+                <a href="#keahlian" class="hover:text-terracotta transition-colors">Keahlian & Hobi</a>
+                <a href="#karya" class="hover:text-terracotta transition-colors">Karya & Diskografi</a>
+                <a href="#sudut-fans" class="hover:text-terracotta transition-colors">Catatan Fans</a>
+            </div>
+            <a href="#sudut-fans" class="bg-walnut text-cream hover:bg-terracotta px-4 py-2 rounded-full text-xs font-semibold transition-all shadow-sm">
+                Apresiasi Fans ✨
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Header Section -->
+    <header class="max-w-6xl mx-auto px-6 pt-12 pb-16 md:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-warmSand border border-walnut/10 px-3 py-1.5 rounded-full text-xs text-walnut font-medium">
+                    <svg class="w-4 h-4 text-terracotta" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+                    </svg>
+                    <span>Penyanyi • Penulis Lagu • Aktor</span>
+                </div>
+                <h1 class="font-serif text-4xl md:text-6xl font-bold text-walnut leading-tight">
+                    Salmantyo Ashrizky Priadi
+                </h1>
+                <p class="font-serif italic text-xl md:text-2xl text-terracotta leading-relaxed">
+                    "Menenun kisah, merawat luka, dan merayakan cinta lewat narasi musik yang hangat dan teatrikal."
+                </p>
+                <p class="text-walnut/70 leading-relaxed text-base md:text-lg max-w-xl">
+                    Portofolio dedikasi untuk mengapresiasi perjalanan kreatif Sal Priadi—musisi asal Malang yang membawa warna puitis nan unik dalam lanskap musik dan seni peran Indonesia modern.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4 items-center">
+                    <a href="#profil" class="bg-terracotta text-white px-6 py-3 rounded-xl hover:bg-walnut transition-all shadow-md font-medium text-sm flex items-center gap-2">
+                        <span>Jelajahi Profil</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <a href="#karya" class="border border-walnut/20 text-walnut hover:border-terracotta hover:text-terracotta px-6 py-3 rounded-xl transition-all font-medium text-sm">
+                        Dengar Karya Pilihan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Polaroid / Photo Frame Section -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-sm">
+                    <!-- Decorative Element -->
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-softClay rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-vintageGold/20 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                    
+                    <div class="relative bg-white p-5 rounded-2xl shadow-xl border border-walnut/10 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                        <!-- Image Placeholder / Visual Container -->
+                        <div class="aspect-[4/5] rounded-xl bg-warmSand overflow-hidden relative border border-walnut/5 flex flex-col justify-end p-6">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800" alt="Sal Priadi Visual Aesthetic" class="absolute inset-0 w-full h-full object-cover opacity-85 hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-walnut/80 via-transparent to-transparent"></div>
+                            <div class="relative z-10 text-white space-y-1">
+                                <span class="text-xs uppercase tracking-widest text-vintageGold font-bold">Sal Priadi</span>
+                                <p class="font-serif text-lg italic">"Di antara riuh dan sunyi..."</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 text-center">
+                            <p class="font-hand text-2xl text-walnut">Salmantyo Ashrizky Priadi</p>
+                            <p class="text-xs text-walnut/50 font-medium">Penyanyi, Penulis Lagu, Aktor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profil Singkat Section -->
+    <section id="profil" class="py-16 bg-warmSand/60 border-y border-walnut/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-walnut mb-3">Profil Singkat</h2>
+                <p class="text-walnut/70 text-sm">Mengenal sosok seniman di balik lirik-lirik puitis dan peran-peran berkesan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Biodata Ringkas Card -->
+                <div class="bg-white p-6 rounded-2xl border border-walnut/10 shadow-sm space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-terracotta/10 text-terracotta flex items-center justify-center font-bold font-serif">
+                        01
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-walnut">Biodata Diri</h3>
+                    <ul class="space-y-3 text-sm text-walnut/80">
+                        <li class="flex justify-between border-b border-walnut/5 pb-2">
+                            <span class="text-walnut/50">Nama Lengkap</span>
+                            <span class="font-medium text-right">Salmantyo A. Priadi</span>
+                        </li>
+                        <li class="flex justify-between border-b border-walnut/5 pb-2">
+                            <span class="text-walnut/50">Nama Panggung</span>
+                            <span class="font-medium">Sal Priadi</span>
+                        </li>
+                        <li class="flex justify-between border-b border-walnut/5 pb-2">
+                            <span class="text-walnut/50">Tempat, TGL</span>
+                            <span class="font-medium">Malang, 30 April 1992</span>
+                        </li>
+                        <li class="flex justify-between border-b border-walnut/5 pb-2">
+                            <span class="text-walnut/50">Zodiak</span>
+                            <span class="font-medium">Taurus</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-walnut/50">Keluarga</span>
+                            <span class="font-medium text-right">Sarah Deshita (Istri)<br>Sejak Barat (Anak)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Karakteristik Seni Card -->
+                <div class="bg-white p-6 rounded-2xl border border-walnut/10 shadow-sm space-y-4 md:col-span-2">
+                    <div class="w-10 h-10 rounded-xl bg-mossGreen/10 text-mossGreen flex items-center justify-center font-bold font-serif">
+                        02
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-walnut">Identitas & Gaya Artistik</h3>
+                    <p class="text-walnut/80 text-sm leading-relaxed">
+                        Sal Priadi dikenal sebagai salah satu penulis lagu paling naratif dan puitis di industri musik Indonesia. Penampilannya khas dengan perpaduan warna musik *chamber pop*, *indietronica*, dan eksperimen teatrikal. Lirik-lirik lagunya sering kali membicarakan cinta, nostalgia, dinamika keluarga, hingga lamunan personal yang dibungkus dalam sudut pandang unik.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-warmSand p-3 rounded-xl text-center">
+                            <p class="text-xs text-walnut/60 font-medium">Genre Utama</p>
+                            <p class="font-serif font-semibold text-walnut text-sm">Pop Puitis / Alternative</p>
+                        </div>
+                        <div class="bg-warmSand p-3 rounded-xl text-center">
+                            <p class="text-xs text-walnut/60 font-medium">Ciri Khas Lirik</p>
+                            <p class="font-serif font-semibold text-walnut text-sm">Naratif & Teatrikal</p>
+                        </div>
+                        <div class="bg-warmSand p-3 rounded-xl text-center col-span-2 md:col-span-1">
+                            <p class="text-xs text-walnut/60 font-medium">Tahun Aktif</p>
+                            <p class="font-serif font-semibold text-walnut text-sm">2015 – Sekarang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan & Pekerjaan Section -->
+    <section id="rekam-jejak" class="py-16 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-walnut mb-3">Pendidikan & Pekerjaan</h2>
+            <p class="text-walnut/70 text-sm">Perjalanan akademis hingga jejak karir multitalenta di panggung seni.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Pendidikan -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3 border-b border-walnut/10 pb-3">
+                    <div class="p-2 bg-terracotta/10 rounded-lg text-terracotta">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-walnut">Riwayat Pendidikan</h3>
+                </div>
+
+                <div class="space-y-6 relative border-l-2 border-walnut/10 pl-6 ml-3">
+                    <!-- item 1 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-terracotta border-4 border-cream"></div>
+                        <span class="text-xs font-semibold text-terracotta bg-terracotta/10 px-2.5 py-0.5 rounded-full">Pendidikan Menengah</span>
+                        <h4 class="font-serif text-lg font-bold text-walnut mt-1">SMA Negeri 1 Malang</h4>
+                        <p class="text-xs text-walnut/60">Kota Malang, Jawa Timur</p>
+                        <p class="text-sm text-walnut/70 mt-2">Mengenyam pendidikan menengah di tanah kelahirannya, Malang, tempat di mana benih minat seni dan literasinya mulai tumbuh pesat.</p>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-walnut/30 border-4 border-cream"></div>
+                        <span class="text-xs font-semibold text-walnut/70 bg-walnut/10 px-2.5 py-0.5 rounded-full">Pendidikan Tinggi</span>
+                        <h4 class="font-serif text-lg font-bold text-walnut mt-1">Universitas Pelita Harapan Surabaya</h4>
+                        <p class="text-xs text-walnut/60">Jurusan Ilmu Hukum (Mengundurkan diri)</p>
+                        <p class="text-sm text-walnut/70 mt-2">Pernah menempuh studi ilmu hukum sebelum akhirnya memutuskan untuk mendedikasikan seluruh passion dan fokus karirnya di dunia seni & seni pertunjukan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pekerjaan & Profesi -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3 border-b border-walnut/10 pb-3">
+                    <div class="p-2 bg-mossGreen/10 rounded-lg text-mossGreen">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-walnut">Pekerjaan & Profesi</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-5 rounded-xl border border-walnut/10 shadow-sm hover:border-terracotta/40 transition-colors">
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="font-serif font-bold text-walnut text-lg">Penyanyi & Penulis Lagu (Singer-Songwriter)</h4>
+                            <span class="text-xs bg-mossGreen/10 text-mossGreen px-2.5 py-0.5 rounded-full font-medium">Utama</span>
+                        </div>
+                        <p class="text-sm text-walnut/70">Menciptakan dan menyanyikan karya musik puitis yang telah diputar puluhan hingga ratusan juta kali di berbagai platform streaming digital.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-walnut/10 shadow-sm hover:border-terracotta/40 transition-colors">
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="font-serif font-bold text-walnut text-lg">Aktor Film & Serial Web</h4>
+                            <span class="text-xs bg-terracotta/10 text-terracotta px-2.5 py-0.5 rounded-full font-medium">Seni Peran</span>
+                        </div>
+                        <p class="text-sm text-walnut/70">Membintangi film-film layar lebar ternama seperti *Seperti Dendam, Rindu Harus Dibayar Tuntas*, *24 Jam Bersama Gaspar*, serta serial *Nightmares and Daydreams*.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-walnut/10 shadow-sm hover:border-terracotta/40 transition-colors">
+                        <div class="flex justify-between items-start mb-1">
+                            <h4 class="font-serif font-bold text-walnut text-lg">Aktor Teatrikal & Pertunjukan Musikal</h4>
+                            <span class="text-xs bg-vintageGold/20 text-walnut px-2.5 py-0.5 rounded-full font-medium">Panggung</span>
+                        </div>
+                        <p class="text-sm text-walnut/70">Aktif tampil di atas panggung teater, seperti pertunjukan musikal *Anugerah Terindah* dan *Setelah Lewat Djam Malam*.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian & Hobi Section -->
+    <section id="keahlian" class="py-16 bg-warmSand/60 border-y border-walnut/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-walnut mb-3">Keahlian & Hobi</h2>
+                <p class="text-walnut/70 text-sm">Kemampuan ekspresi seni dan aktivitas kegemaran Sal Priadi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Keahlian -->
+                <div class="bg-white p-8 rounded-2xl border border-walnut/10 shadow-sm space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-walnut flex items-center gap-2">
+                        <span>✨ Keahlian Utama</span>
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-walnut">Penulisan Lirik Puitis (Lyricism & Storytelling)</span>
+                                <span class="text-terracotta font-serif">Sangat Tinggi</span>
+                            </div>
+                            <div class="w-full bg-warmSand h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-terracotta h-full rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-walnut">Seni Peran & Ekspresi Teatrikal</span>
+                                <span class="text-terracotta font-serif">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-warmSand h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-terracotta h-full rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-walnut">Komposisi Musik & Performa Vokal</span>
+                                <span class="text-terracotta font-serif">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-warmSand h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-terracotta h-full rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-walnut">Konsep Visual & Pengarahan Artistik Karya</span>
+                                <span class="text-terracotta font-serif">Sangat Tinggi</span>
+                            </div>
+                            <div class="w-full bg-warmSand h-2.5 rounded-full overflow-hidden">
+                                <div class="bg-terracotta h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobi & Minat -->
+                <div class="bg-white p-8 rounded-2xl border border-walnut/10 shadow-sm space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-walnut flex items-center gap-2">
+                        <span>🌿 Hobi & Kegemaran</span>
+                    </h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-warmSand/50 rounded-xl border border-walnut/5">
+                            <p class="font-serif font-bold text-walnut mb-1">📝 Menulis Puisi & Jurnal</p>
+                            <p class="text-xs text-walnut/70">Mencatat kejadian sehari-hari yang kerap diolah menjadi gagasan lagu.</p>
+                        </div>
+
+                        <div class="p-4 bg-warmSand/50 rounded-xl border border-walnut/5">
+                            <p class="font-serif font-bold text-walnut mb-1">📷 Fotografi Analog</p>
+                            <p class="text-xs text-walnut/70">Menangkap momen bernuansa nostalgia menggunakan kamera film vintage.</p>
+                        </div>
+
+                        <div class="p-4 bg-warmSand/50 rounded-xl border border-walnut/5">
+                            <p class="font-serif font-bold text-walnut mb-1">🎭 Menonton Teater & Film</p>
+                            <p class="text-xs text-walnut/70">Menggali inspirasi karakter dan dramaturgi dari pertunjukan panggung.</p>
+                        </div>
+
+                        <div class="p-4 bg-warmSand/50 rounded-xl border border-walnut/5">
+                            <p class="font-serif font-bold text-walnut mb-1">🏠 Menghabiskan Waktu Bersama Keluarga</p>
+                            <p class="text-xs text-walnut/70">Menjadi sumber inspirasi utama lagu-lagu hangat seperti *Kita usahakan rumah itu*.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Tambahan / Karya Utama Section -->
+    <section id="karya" class="py-16 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-walnut mb-3">Karya Pilihan & Diskografi</h2>
+            <p class="text-walnut/70 text-sm">Eksplorasi karya musik hits, filmografi, serta raihan prestasi Sal Priadi.</p>
+        </div>
+
+        <!-- Single Feature Highlight Player Simulation -->
+        <div class="bg-walnut text-cream p-8 rounded-3xl mb-12 relative overflow-hidden shadow-2xl">
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-8 space-y-4">
+                    <span class="text-xs bg-vintageGold/20 text-vintageGold px-3 py-1 rounded-full font-mono uppercase tracking-widest">Lagu Paling Dikenal</span>
+                    <h3 class="font-serif text-3xl md:text-4xl font-bold text-white">"Gala Bunga Matahari"</h3>
+                    <p class="font-serif italic text-softClay text-lg">
+                        "Mekar bersama bunga-bunga matahari... Jika kau rindu, katakan padaku..."
+                    </p>
+                    <p class="text-cream/70 text-sm leading-relaxed max-w-xl">
+                        Lagu emosional yang menyentuh hati jutaan pendengar, mengisahkan rasa rindu mendalam kepada orang tercinta yang telah berpulang.
+                    </p>
+                </div>
+                <div class="md:col-span-4 flex flex-col items-center justify-center bg-white/5 border border-white/10 p-6 rounded-2xl">
+                    <div class="w-16 h-16 rounded-full bg-terracotta text-white flex items-center justify-center mb-3 shadow-lg">
+                        <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.333-5.89a1.5 1.5 0 000-2.538L6.3 2.841z"/></svg>
+                    </div>
+                    <span class="text-xs text-cream/60">Album: MARKERS AND SUCH...</span>
+                    <span class="text-xs font-bold text-vintageGold mt-1">200M+ Pemutaran Streaming</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Diskografi Card -->
+            <div class="bg-white p-6 rounded-2xl border border-walnut/10 shadow-sm space-y-4">
+                <h3 class="font-serif text-xl font-bold text-walnut flex items-center gap-2">
+                    <span>🎵 Diskografi Album & Single</span>
+                </h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Album Studio "Berhati" (2020)</p>
+                        <p class="text-xs text-walnut/60">Debut album fenomenal berisi tembang-tembang puitis mendalam.</p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Album "MARKERS AND SUCH PENS FLASHDISK" (2024)</p>
+                        <p class="text-xs text-walnut/60">Berisi lagu hits viral seperti *Gala Bunga Matahari* & *Dari Planet Lain*.</p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Single Kolaborasi Populer</p>
+                        <p class="text-xs text-walnut/60">*Amin Paling Serius* (feat. Nadin Amizah), *Kita usahakan rumah itu*, *Serta Mulia*.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Filmografi Card -->
+            <div class="bg-white p-6 rounded-2xl border border-walnut/10 shadow-sm space-y-4">
+                <h3 class="font-serif text-xl font-bold text-walnut flex items-center gap-2">
+                    <span>🎬 Filmografi & Teater</span>
+                </h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Seperti Dendam, Rindu Harus Dibayar Tuntas (2021)</p>
+                        <p class="text-xs text-walnut/60">Berperan sebagai Tokek, debut film layar lebar yang mendapat pujian kritis.</p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">24 Jam Bersama Gaspar & Nightmares and Daydreams (2024)</p>
+                        <p class="text-xs text-walnut/60">Tampil menawan dalam sinema fiksi ilmiah dan supranatural garapan sutradara ternama.</p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Pentas Teater "Setelah Lewat Djam Malam"</p>
+                        <p class="text-xs text-walnut/60">Menunjukkan kebolehan akting dan olah vokal langsung di atas panggung teater.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Penghargaan Card -->
+            <div class="bg-white p-6 rounded-2xl border border-walnut/10 shadow-sm space-y-4">
+                <h3 class="font-serif text-xl font-bold text-walnut flex items-center gap-2">
+                    <span>🏆 Penghargaan & Prestasi</span>
+                </h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="p-3 bg-vintageGold/10 rounded-xl border border-vintageGold/30">
+                        <p class="font-serif font-bold text-walnut">Pemenang AMI Awards 2024</p>
+                        <p class="text-xs text-walnut/70">Kategori: <strong class="text-terracotta">Artis Solo Pria Pop Terbaik</strong></p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Nominasi AMI Awards Multikategori</p>
+                        <p class="text-xs text-walnut/60">Masuk nominasi Artis Solo Pop Terbaik sejak single *Ikat Aku di Tulang Belikatmu* (2018).</p>
+                    </li>
+                    <li class="p-3 bg-warmSand/50 rounded-xl">
+                        <p class="font-serif font-bold text-walnut">Pencapaian Billboard & Spotify</p>
+                        <p class="text-xs text-walnut/60">Lagu-lagunya konsisten menduduki tangga lagu teratas di Spotify Indonesia Chart.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sudut Fans / Fan Corner Section -->
+    <section id="sudut-fans" class="py-16 bg-warmSand/60 border-t border-walnut/10">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white p-8 md:p-12 rounded-3xl border border-walnut/10 shadow-md text-center space-y-6">
+                <span class="text-xs uppercase tracking-widest text-terracotta font-bold">Sudut Apresiasi Pengagum</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-walnut">Pesan Cinta Dari Fans Setia</h2>
+                <p class="font-serif italic text-walnut/80 text-lg max-w-2xl mx-auto">
+                    "Terima kasih, Sal Priadi, karena telah mewakili perasaan-perasaan yang sulit kami rangkai dengan kata-kata sendiri. Melalui setiap nada dan lirik, kau memberi ruang untuk kita merayakan hangatnya mencintai dan merawat rindu."
+                </p>
+
+                <div class="pt-4 flex justify-center items-center gap-2 text-xs font-semibold text-walnut/50">
+                    <span>Dibuat dengan rasa kagum oleh penggemar Sal Priadi</span>
+                    <span>•</span>
+                    <span class="text-terracotta">Malang / Indonesia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-walnut text-cream/60 py-8 border-t border-white/10 text-xs text-center">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© Portofolio Apresiasi Sal Priadi. Semua karya musik & citra visual milik Sal Priadi & Manajemen.</p>
+            <div class="flex space-x-6 text-cream/80 font-medium">
+                <a href="https://instagram.com/salpriadi" target="_blank" class="hover:text-terracotta transition-colors">Instagram @salpriadi</a>
+                <a href="#" class="hover:text-terracotta transition-colors">Spotify</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
